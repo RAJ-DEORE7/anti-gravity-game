@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Gravity Platformer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="hud">
+            <div class="hud-item">Score: <span id="score">0</span></div>
+            <div class="hud-item" id="message">Press SPACE to Start</div>
+            <div class="hud-item">Level: <span id="level">1</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="leaderboard-overlay" class="hidden">
+            <h2>Leaderboard</h2>
+            <ul id="leaderboard-list"></ul>
+            <div id="name-input-container" class="hidden">
+                <input type="text" id="player-name" maxlength="3" placeholder="AAA">
+                <button id="submit-score-btn">Submit Score</button>
+            </div>
+            <button id="restart-btn">Restart Game</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
